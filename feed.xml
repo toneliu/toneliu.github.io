@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>黎跃春区块链博客</title>
+    <description>黎跃春，江湖人称春哥，孔壹学院、链乎创始人 &amp; CEO，全球区块链职业教育布道师，通信和信息技术培养工程区块链高级授课专家。</description>
+    <link>http://liyuechun.org/</link>
+    <atom:link href="http://liyuechun.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 25 Jan 2018 17:19:12 +0800</pubDate>
+    <lastBuildDate>Thu, 25 Jan 2018 17:19:12 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>hello world</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;作者：haotian。&lt;/p&gt;
+  &lt;h1 id=&quot;git&quot;&gt;git&lt;/h1&gt;
+  &lt;p&gt;##git ssh 公私钥配置&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;##初始化本地代码仓库&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;方法一
+从远程克隆到本地&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/toneliu/blog.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;方法二
+本地新建个目录初始化一个仓库&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init &lt;span class=&quot;c&quot;&gt;#初始化git仓库&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;添加远程仓库 名为blog，一般默认origin。输入以下命令后blog就默认为该url链接。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add blog https://github.com/toneliu/blog.git &lt;span class=&quot;c&quot;&gt;#添加远程仓库 名为blog 一般默认origin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull blog master &lt;span class=&quot;c&quot;&gt;#从远处pull到本地master分支&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;##创建分支&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch  newb &lt;span class=&quot;c&quot;&gt;#创建分支不切换&lt;/span&gt;
+git checkout -b newb#创建分支并切换到新分支
+git branch &lt;span class=&quot;c&quot;&gt;#查看所有分支&lt;/span&gt;
+git checkout newb  &lt;span class=&quot;c&quot;&gt;#切换到newb分支&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;http://p2yi3s2wg.bkt.clouddn.com/15168649491295.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git commit -a -m &lt;span class=&quot;s2&quot;&gt;&quot;update branch&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#增加文件并commit 相当于先 git add * 后commit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push blog2 newb#创建远程分支 并提交
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;##合并分支&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge newb master &lt;span class=&quot;c&quot;&gt;#将newb分支合并到master分支&lt;/span&gt;
+git push blog master &lt;span class=&quot;c&quot;&gt;#push 到远程更新master分支&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;删除分支&quot;&gt;删除分支&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch -d newb &lt;span class=&quot;c&quot;&gt;#删除本地newb分支&lt;/span&gt;
+git branch -r -d blog/newb &lt;span class=&quot;c&quot;&gt;#删除远程分支&lt;/span&gt;
+git branch -r &lt;span class=&quot;c&quot;&gt;#查看远程分支&lt;/span&gt;
+git push blog :newb &lt;span class=&quot;c&quot;&gt;#push操作执行远程分支删除&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;http://p2yi3s2wg.bkt.clouddn.com/15168658068663.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 25 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://liyuechun.org/2018/01/25/github/</link>
+        <guid isPermaLink="true">http://liyuechun.org/2018/01/25/github/</guid>
+        
+        <category>git</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
