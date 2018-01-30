@@ -210,7 +210,7 @@
   <p>作者：刘昊天</p>
 </blockquote>
 
-<p>#Go的并发通信</p>
+<h1 id="go的并发通信">Go的并发通信</h1>
 
 <p>[toc]</p>
 
@@ -222,8 +222,8 @@
 
 <p>本篇文章主要讨论go语言中的消息传递方式通信</p>
 
-<p>#1.channel 管道 （Pipeline）
-管道通常称作Pipeline
+<h1 id="1channel-管道-pipeline">1.channel 管道 （Pipeline）</h1>
+<p>管道通常称作Pipeline
 Go语言提供的消息通信机制被称为channel
 <strong>管道特性：先进先出</strong>
 同时go语言提供缓冲管道和非缓冲管道，缓冲管道顾名思义是能够传输并缓存多条数据的管道，你可以将管道存储到其上限，一次可以提取多条数据。非缓冲管道即每次只能传递一条数据便被填满，只能等到数据被读取才会进行后续操作，否则都会被阻塞。</p>
@@ -234,33 +234,33 @@ Go语言提供的消息通信机制被称为channel
 
 <p>管道的读写操作形成互斥阻塞作用，只有在能够进行读取或写入操作后程序才能继续进行，所以在使用管道时应该尽量考虑周全，以免出现死锁的状况。</p>
 
-<p>###定义别名 
-<code class="highlighter-rouge">type IntChan chan int</code>通过该定义可以给<code class="highlighter-rouge">chan int</code>
-###直接声明
-<code class="highlighter-rouge">var a int</code>
+<h3 id="定义别名">定义别名</h3>
+<p><code class="highlighter-rouge">type IntChan chan int</code>通过该定义可以给<code class="highlighter-rouge">chan int</code></p>
+<h3 id="直接声明">直接声明</h3>
+<p><code class="highlighter-rouge">var a int</code>
 <code class="highlighter-rouge">var intChan chan int </code>
 <code class="highlighter-rouge">chan &lt;- chanT</code></p>
 
-<p>##1.1非缓冲管道
-<strong>非缓冲管道变量声明方式：</strong>
+<h2 id="11非缓冲管道">1.1非缓冲管道</h2>
+<p><strong>非缓冲管道变量声明方式：</strong>
 a := make (chan int)</p>
 
-<p>##1.2缓冲管道
-<strong>缓冲管道变量声明方式：</strong>
+<h2 id="12缓冲管道">1.2缓冲管道</h2>
+<p><strong>缓冲管道变量声明方式：</strong>
 <code class="highlighter-rouge">a := make(chan int ,10)</code></p>
 
 <p>可以通过<code class="highlighter-rouge">len()</code>函数查询当前有多少数据
 可以通过<code class="highlighter-rouge">cap()</code>函数查询该管道数据上限，即容量</p>
 
-<p>##1.3管道返回值
-从管道中读取值，并赋值有两种方式
+<h2 id="13管道返回值">1.3管道返回值</h2>
+<p>从管道中读取值，并赋值有两种方式
 从管道取值,可以为一或两个返回值
 第一种：两个返回值，其中key为其中的内容，ok为布尔类型，表明读取到结果，若为true，则代表从中读取到数据，false则代表读取失败。
 1.<code class="highlighter-rouge">key,ok := c</code>
 第二种：则是直接将c中的值赋给key，若c中没有数据则会阻塞到该处，简单粗暴。
 2.<code class="highlighter-rouge">key := &lt;- c</code></p>
 
-<p>##1.4关闭管道</p>
+<h2 id="14关闭管道">1.4关闭管道</h2>
 
 <p>关闭管道使用<code class="highlighter-rouge">close()</code>函数
  例如<code class="highlighter-rouge">close(ch)</code></p>
@@ -368,7 +368,7 @@ a := make (chan int)</p>
 </span></code></pre>
 </div>
 
-<p>#2.go的gdb调试</p>
+<h1 id="2go的gdb调试">2.go的gdb调试</h1>
 <blockquote>
   <p>因为用到了多线程，我们一般也不知道操作系统时如何进行上下文切换的，造成我们不容易跟踪程序如何跑的，此时我们就需要gdb调试工具</p>
 </blockquote>
