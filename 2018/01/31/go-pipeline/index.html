@@ -212,8 +212,6 @@
 
 <h1 id="go的并发通信">Go的并发通信</h1>
 
-<p>[toc]</p>
-
 <blockquote>
   <p>在工程上，有两种最常见的并发通信模型:共享数据和消息。
 共享数据有共享内存，进行线程间进程间通信
@@ -222,7 +220,7 @@
 
 <p>本篇文章主要讨论go语言中的消息传递方式通信</p>
 
-<h1 id="1channel-管道-pipeline">1.channel 管道 （Pipeline）</h1>
+<h1 id="1channel-管道-pipeline">1.channel 管道 (Pipeline)</h1>
 <p>管道通常称作Pipeline
 Go语言提供的消息通信机制被称为channel
 <strong>管道特性：先进先出</strong>
@@ -418,9 +416,9 @@ a := make (chan int)</p>
 <img src="http://p2yi3s2wg.bkt.clouddn.com/15173361961160.jpg" alt="" /></p>
 
 <p><strong>设置断点:</strong>
-` b 58_gdb.go:15<code class="highlighter-rouge">设置源文件中的第15行为断点
-![](http://p2yi3s2wg.bkt.clouddn.com/15173362483475.jpg)
-然后输入</code>run<code class="highlighter-rouge">运行，当运行到所设置的断点处就会停下，然后输入</code>c`，便会继续运行程序直到下一处断点。
+<code class="highlighter-rouge">b 58_gdb.go:15</code>设置源文件中的第15行为断点
+<img src="http://p2yi3s2wg.bkt.clouddn.com/15173362483475.jpg" alt="" />
+然后输入<code class="highlighter-rouge">run</code>运行，当运行到所设置的断点处就会停下，然后输入<code class="highlighter-rouge">c</code>，便会继续运行程序直到下一处断点。
 <img src="http://p2yi3s2wg.bkt.clouddn.com/15173363122039.jpg" alt="" /></p>
 
 <p>我们也能看到多个线程的创建和切换。<strong><em>那么Enjoy你的多线程开发之旅吧！</em></strong></p>

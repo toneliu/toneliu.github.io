@@ -5,8 +5,8 @@
     <description>黎跃春，江湖人称春哥，孔壹学院、链乎创始人 &amp; CEO，全球区块链职业教育布道师，通信和信息技术培养工程区块链高级授课专家。</description>
     <link>http://liyuechun.org/</link>
     <atom:link href="http://liyuechun.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 Jan 2018 02:37:39 +0800</pubDate>
-    <lastBuildDate>Wed, 31 Jan 2018 02:37:39 +0800</lastBuildDate>
+    <pubDate>Wed, 31 Jan 2018 02:47:04 +0800</pubDate>
+    <lastBuildDate>Wed, 31 Jan 2018 02:47:04 +0800</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -17,8 +17,6 @@
 
 &lt;h1 id=&quot;go的并发通信&quot;&gt;Go的并发通信&lt;/h1&gt;
 
-&lt;p&gt;[toc]&lt;/p&gt;
-
 &lt;blockquote&gt;
   &lt;p&gt;在工程上，有两种最常见的并发通信模型:共享数据和消息。
 共享数据有共享内存，进行线程间进程间通信
@@ -27,7 +25,7 @@
 
 &lt;p&gt;本篇文章主要讨论go语言中的消息传递方式通信&lt;/p&gt;
 
-&lt;h1 id=&quot;1channel-管道-pipeline&quot;&gt;1.channel 管道 （Pipeline）&lt;/h1&gt;
+&lt;h1 id=&quot;1channel-管道-pipeline&quot;&gt;1.channel 管道 (Pipeline)&lt;/h1&gt;
 &lt;p&gt;管道通常称作Pipeline
 Go语言提供的消息通信机制被称为channel
 &lt;strong&gt;管道特性：先进先出&lt;/strong&gt;
@@ -223,9 +221,9 @@ a := make (chan int)&lt;/p&gt;
 &lt;img src=&quot;http://p2yi3s2wg.bkt.clouddn.com/15173361961160.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;设置断点:&lt;/strong&gt;
-` b 58_gdb.go:15&lt;code class=&quot;highlighter-rouge&quot;&gt;设置源文件中的第15行为断点
-![](http://p2yi3s2wg.bkt.clouddn.com/15173362483475.jpg)
-然后输入&lt;/code&gt;run&lt;code class=&quot;highlighter-rouge&quot;&gt;运行，当运行到所设置的断点处就会停下，然后输入&lt;/code&gt;c`，便会继续运行程序直到下一处断点。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;b 58_gdb.go:15&lt;/code&gt;设置源文件中的第15行为断点
+&lt;img src=&quot;http://p2yi3s2wg.bkt.clouddn.com/15173362483475.jpg&quot; alt=&quot;&quot; /&gt;
+然后输入&lt;code class=&quot;highlighter-rouge&quot;&gt;run&lt;/code&gt;运行，当运行到所设置的断点处就会停下，然后输入&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;，便会继续运行程序直到下一处断点。
 &lt;img src=&quot;http://p2yi3s2wg.bkt.clouddn.com/15173363122039.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我们也能看到多个线程的创建和切换。&lt;strong&gt;&lt;em&gt;那么Enjoy你的多线程开发之旅吧！&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
