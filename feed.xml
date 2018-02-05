@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>黎跃春区块链博客</title>
-    <description>黎跃春，江湖人称春哥，孔壹学院、链乎创始人 &amp; CEO，全球区块链职业教育布道师，通信和信息技术培养工程区块链高级授课专家。</description>
-    <link>http://liyuechun.org/</link>
-    <atom:link href="http://liyuechun.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 Jan 2018 02:47:04 +0800</pubDate>
-    <lastBuildDate>Wed, 31 Jan 2018 02:47:04 +0800</lastBuildDate>
+    <title>刘昊天区块链博客</title>
+    <description>刘昊天，软件开发工程师，现在主攻区块链技术，链乎团队成员。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 05 Feb 2018 20:43:40 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2018 20:43:40 +0800</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -14,8 +14,6 @@
         <description>&lt;blockquote&gt;
   &lt;p&gt;作者：刘昊天&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;h1 id=&quot;go的并发通信&quot;&gt;Go的并发通信&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;在工程上，有两种最常见的并发通信模型:共享数据和消息。
@@ -230,8 +228,8 @@ a := make (chan int)&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 31 Jan 2018 00:00:00 +0800</pubDate>
-        <link>http://liyuechun.org/2018/01/31/go-pipeline/</link>
-        <guid isPermaLink="true">http://liyuechun.org/2018/01/31/go-pipeline/</guid>
+        <link>http://localhost:4000/2018/01/31/go-pipeline/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/31/go-pipeline/</guid>
         
         <category>git</category>
         
@@ -308,8 +306,8 @@ git push blog :newb &lt;span class=&quot;c&quot;&gt;#push操作执行远程分�
 
 </description>
         <pubDate>Thu, 25 Jan 2018 00:00:00 +0800</pubDate>
-        <link>http://liyuechun.org/2018/01/25/github/</link>
-        <guid isPermaLink="true">http://liyuechun.org/2018/01/25/github/</guid>
+        <link>http://localhost:4000/2018/01/25/github/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/25/github/</guid>
         
         <category>git</category>
         
